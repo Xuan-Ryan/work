@@ -119,8 +119,10 @@ typedef struct deviceinfo
 typedef struct threadinfo
 {
     UINT32          sd;
+    UINT32          flag;
+    UINT32          kill_rc;
     UINT8           ModelName[12];             /*modelname = IPW611T/R */
     UINT8           Version[16];               /*IPW611T/R-  0.0.0.210427.bin*/
     UINT8           DeviceName[16];            /*devicename =TEST_NAME */       
-    UINT8           Rsvd[22];
+    UINT8           Rsvd[8];
 } THREADINFO, *PTHREADINFO;
